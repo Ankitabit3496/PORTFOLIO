@@ -8,16 +8,16 @@ type Props = {}
 
 export default function Navbar({}: Props) {
     return (
-        <div className="w-full h-full max-w-lg bg-primary flex justify-between items-center px-4 py-2 rounded-xl border m-4">
+        <div className="w-full h-full max-w-lg bg-primary flex justify-between items-center px-4 py-2 rounded-xl border m-4 z-50">
             <div className = 'flex justify-center items-center gap-4' >
             {/* home */}
-            <Link href='#'><Button variant='ghost' size='icon'><House className = "text-primary-foreground" /></Button></Link>
+            <Link href='#home'><Button variant='ghost' size='icon'><House className = "text-primary-foreground" /></Button></Link>
             {/* Projects */}
-            <Link href='#'><Button variant='ghost' size='icon'> <Folder className = "text-primary-foreground"/></Button></Link>
+            <Link href='#projects'><Button variant='ghost' size='icon'> <Folder className = "text-primary-foreground"/></Button></Link>
             {/* Experience */}
-            <Link href='#'><Button variant='ghost' size='icon'><Briefcase className = "text-primary-foreground"/></Button></Link>
+            <Link href='#experience'><Button variant='ghost' size='icon'><Briefcase className = "text-primary-foreground"/></Button></Link>
             {/* Education Section */}
-            <Link href='#'><Button variant='ghost' size='icon'><GraduationCap className = "text-primary-foreground"/></Button></Link>
+            <Link href='#education'><Button variant='ghost' size='icon'><GraduationCap className = "text-primary-foreground"/></Button></Link>
             {/* Contact us section */}
             <Link href='#'><Button variant='ghost' size='icon'><Mail className = "text-primary-foreground"/></Button></Link>
             </div>
@@ -26,10 +26,12 @@ export default function Navbar({}: Props) {
             {/* Toggle Theme*/}
             <ModeToggle />
             {/* Hire Me */}
+            <Link href={``}>
             <Button className='flex justify-center items-center gap-2' variant='outline'>
             <DiamondPlus className = ''/>
              Hire Me
             </Button>
+            </Link>
             </div>
         </div>
     )
