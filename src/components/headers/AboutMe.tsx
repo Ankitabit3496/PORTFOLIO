@@ -1,9 +1,10 @@
-import { Folder, Globe, Link, Mail } from 'lucide-react';
+import { Folder, Globe, Mail } from 'lucide-react';
 import React from 'react'
 import { Badge } from '../ui/badge';
 import { cn } from '@/lib/utils';
-import { Button } from '../ui/button';
+import { Button } from '@/components/ui/button';
 import {data} from '@/lib/data';
+import Link from 'next/link';
 
 type Props = {
     name: string;
@@ -30,14 +31,14 @@ export default function AboutMe({name,role,availability,location,email,image,res
                 {availability === "available"? "Available": availability === "open to work"}
             </div>
         </div>
-        <div className="w-full flex justiy-between items-center">
+        <div className="w-full flex justiy-between items-center gap-11">
             {/* name, location, currentCompany, image */}
             <div className="flex flex-col justify-center items-start">
-                <h1 className="text-3xl font-bold"> Hello, I'm, {name}</h1>
-                <p>{role} based in {location}</p>
-                <p>{currentCompany.role} @ {currentCompany.name} for {currentCompany.duration}</p>
+                <h1 className="text-3xl font-bold"> Hello, I'm {name}</h1>
+                <p className="semi-bold">Looking for SWE roles..</p>
+                <p>{currentCompany.role} @ {currentCompany.name} for {currentCompany.duration} yrs</p>
             </div>
-            <img src={image} alt={name} className="h-24 w-24 object-cover rounded-lg"></img>
+            <img src={image} alt={name} className="h-24 w-24 object-cover rounded-full"></img>
         </div>
         <div className="flex justify-center items-center gap-2">
             {/* Resume, email */}

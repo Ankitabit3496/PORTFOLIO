@@ -8,8 +8,8 @@ import {data} from "@/lib/data";
 export default function Home() {
   return (
 
-    <main className="flex min-h-screen flex-col items-center justify-between px-24">
-      <div className="bg-primary-foreground p-2 pb-0 rounded-xl w-full flex flex-col items-center justify-between gap-4">
+    <main className="flex min-h-screen flex-col items-center justify-between px-24 ">
+      <div className=" bg-[url('/backg.jpg')] p-2 pb-0 rounded-xl w-full flex flex-col items-center justify-between gap-4">
       <AboutMe name={"Ankita"} role={"Software Engineer"} availability={"open to work"} location={"Bengaluru"} email={"ankitachaudhary3496@gmail.com"} image={"./Myphotuu.jpg"} resume={""} currentCompany={{
           name: "Accenture",
           role: "Associate",

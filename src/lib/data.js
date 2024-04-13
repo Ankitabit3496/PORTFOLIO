@@ -37,7 +37,7 @@ export const data = {
         }
     ],
     projects:[
-        {
+          {
             image: "./nextjslogo.jpeg",
             title: "NextJs Portfolio",
             description: "A portfolio of my career in programming, built simply with Nextjs",
