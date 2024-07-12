@@ -56,21 +56,21 @@ export const data = {
             title: "Gaming",
             description: "AI powered Tic-Tac-Toe game",
             tags: ["Javascript", "Minimax Algorithm"],
-            href: "/projects/portfolio",
+            href: "https://github.com/Ankitabit3496/AI-Powered-Tic-Tac-Toe",
           },
           {
             image: "./nodejslogo.jpeg",
             title: "Tourism Application",
             description: "Explored the world of Node.js by developing a web based Camp Advisor application for tourists",
             tags: ["Node.js", "Express", "MongoDB"],
-            href: "/projects/portfolio",
+            href: "https://github.com/Ankitabit3496/MyCampAdvisor",
           },
           {
             image: "./socketlogo.png",
             title: "Chat Application",
             description: "A chatting application, built with Node.js and Socket.io",
             tags: ["Node.js", "Socket.io"],
-            href: "/projects/portfolio",
+            href: "https://github.com/Ankitabit3496/Chat-App",
           },          
           
     ]
